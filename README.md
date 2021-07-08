@@ -1,4 +1,5 @@
-#abstract
+##Abstract
+
 A Decentralized Monetary System which tries to achieve Monetary
 Equillibrium. We see money as a special product which is specialized to do
 the accounting of economic goods and services and make trade efficient
