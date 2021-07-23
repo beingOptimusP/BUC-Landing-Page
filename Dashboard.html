@@ -78,33 +78,6 @@
     <div id="chartContainer" style="height: 300px; width: 80%;margin: auto;"></div>
 
     <script>
-        //line chart
-        window.onload = function() {
-
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                theme: "light2",
-                title: {
-                    text: "Total supply(current): 1000,000,000"
-                },
-                data: [{
-                    type: "line",
-                    indexLabelFontSize: 16,
-                    dataPoints: [{
-                        y: 1000000000
-                    }, {
-                        y: 1000020000
-                    }, {
-                        y: 1000300000
-                    }, {
-                        y: 1000024000
-                    }]
-                }]
-            });
-            chart.render();
-
-        }
-
         Number.prototype.noExponents = function() {
             var data = String(this).split(/[eE]/);
             if (data.length == 1) return data[0];
@@ -218,6 +191,33 @@
 
             }
         };
+
+        //line chart
+        window.onload = function() {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Total supply"
+                },
+                data: [{
+                    type: "line",
+                    indexLabelFontSize: 16,
+                    dataPoints: [{
+                        y: 1000000000
+                    }, {
+                        y: 1000020000
+                    }, {
+                        y: 1000300000
+                    }, {
+                        y: 1000024000
+                    }]
+                }]
+            });
+            chart.render();
+
+        }
     </script>
 </body>
 
